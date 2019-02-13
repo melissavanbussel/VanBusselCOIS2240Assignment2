@@ -23,8 +23,8 @@ class Triangle extends GeometricObject {
     /** Override the toString method */
     public String toString() {
         // Implement it to return the three sides
-        return "Triangle: side1 = " + side1 + " side2 = " +
-                side2 +
-                " side3 = " + side3;
+        return "(Triangle) has the following:  \nside1 = " + side1 + ","
+                + " side2 = " + side2 + ","
+                + " side3 = " + side3;
     }
 }
