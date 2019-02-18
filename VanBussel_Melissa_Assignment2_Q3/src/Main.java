@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         VotePersonalIdentification voter = new VotePersonalIdentification();
-        Scanner sc = new Scanner(System.in).useDelimiter( "(\\b|\\B)" ); // This will prevent whitespace from being ignored when getting user input
+        Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the voting system!" +
                 " Before we get started, we need to register you as a voter.");
         askForFirstName(sc, voter);
@@ -14,6 +14,8 @@ public class Main {
         askForPostalCode(sc, voter);
         System.out.println(voter.successfullyRegistered());
         System.out.println(voter.voterID());
+        presidentBallot();
+      //  vicePresidentBallot();
     }
 
     public static void askForFirstName(Scanner sc, VotePersonalIdentification voter) {
@@ -109,5 +111,15 @@ public class Main {
                 System.out.println("That is not a valid postal code. Please use numbers, capital letters, and spaces only.");
         } while (valid == false);
         voter.setVoterPostalCode(input);
+    }
+
+    public static void presidentBallot() {
+        Candidate[] presCans = new Candidate[3];
+        presCans[0] = new Candidate("Bart Simpson", "If elected, I will make homework illegal.");
+        presCans[1] = new Candidate("Harry Potter", "If you vote me for President, the next 4 years will be magical.");
+        presCans[2] = new Candidate("Robin Hood", "If I'm President, I'll steal from the rich and give to the poor.");
+        BallotCreation presBallot = new BallotCreation("President", presCans);
+        presBallot.displayBallot();
+        System.out.println(presBallot.submitBallot());
     }
 }
