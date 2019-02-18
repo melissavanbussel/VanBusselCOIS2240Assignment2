@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.util.Calendar;
 import java.util.Date;
 public class VotePersonalIdentification {
     // Fields
@@ -54,14 +55,15 @@ public class VotePersonalIdentification {
     }
 
     public String voterID() {
-        Date currentTime = new java.util.Date();
-        String year = Integer.toString(currentTime.getYear() + 1900); // have to add 1900 since the getYear method returns current year - 1900
-        String month = new DecimalFormat("00").format(currentTime.getMonth());
-        String day = new DecimalFormat("00").format(currentTime.getDay());
-        String hour = new DecimalFormat("00").format(currentTime.getHours());
-        String minute = new DecimalFormat("00").format(currentTime.getMinutes());
-        String second = new DecimalFormat("00").format(currentTime.getSeconds());
-        String voterID = year + month + day + hour + minute + second;
+        Calendar currentTime = Calendar.getInstance();
+        String year = Integer.toString(currentTime.get(Calendar.YEAR));
+        String month = new DecimalFormat("00").format(currentTime.get(Calendar.MONTH));
+        String day = new DecimalFormat("00").format(currentTime.get(Calendar.DAY_OF_MONTH));
+        String hour = new DecimalFormat("00").format(currentTime.get(Calendar.HOUR));
+        String minute = new DecimalFormat("00").format(currentTime.get(Calendar.MINUTE));
+        String second = new DecimalFormat("00").format(currentTime.get(Calendar.SECOND));
+        String millisecond = new DecimalFormat("00").format(currentTime.get(Calendar.MILLISECOND));
+        String voterID = year + month + day + hour + minute + second + millisecond;
         return "Your voter ID is: " + voterID;
     }
 }
