@@ -1,10 +1,13 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        VotePersonalIdentification voter = new VotePersonalIdentification();
-        Scanner sc = new Scanner(System.in);
+        // Welcome the user, explain purpose of program
         System.out.println("Welcome to the voting system!" +
                 " Before we get started, we need to register you as a voter.");
+
+        // Ask for voter information
+        VotePersonalIdentification voter = new VotePersonalIdentification();
+        Scanner sc = new Scanner(System.in);
         askForFirstName(sc, voter);
         askForLastName(sc, voter);
         askForSIN(sc, voter);
@@ -12,12 +15,23 @@ public class Main {
         askForCity(sc, voter);
         askForProvince(sc, voter);
         askForPostalCode(sc, voter);
+
+        // Tell user that they've registered successfully, and display their voter information
         System.out.println(voter.successfullyRegistered());
-        System.out.println(voter.voterID());
-        presidentBallot();
-      //  vicePresidentBallot();
+
+        // Get user to vote for President and Vice President
+        presidentVote(voter);
+        vicePresidentVote(voter);
+
+        // End the program
+        System.out.println("Thank you for participating in the election. That's all the ballots! Have a good day.");
     }
 
+    /** This method asks the voter for their first name, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose first name we are obtaining.
+     */
     public static void askForFirstName(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -31,6 +45,11 @@ public class Main {
         voter.setVoterFirstName(input);
     }
 
+    /** This method asks the voter for their last name, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose last name we are obtaining.
+     */
     public static void askForLastName(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -44,6 +63,11 @@ public class Main {
         voter.setVoterLastName(input);
     }
 
+    /** This method asks the voter for their SIN, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose SIN we are obtaining.
+     */
     public static void askForSIN(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -57,6 +81,11 @@ public class Main {
         voter.setVoterSIN(input);
     }
 
+    /** This method asks the voter for their street address, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose street address we are obtaining.
+     */
     public static void askForAddress(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -74,6 +103,11 @@ public class Main {
         voter.setVoterAddress(input);
     }
 
+    /** This method asks the voter for their city, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose city we are obtaining.
+     */
     public static void askForCity(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -87,6 +121,11 @@ public class Main {
         voter.setVoterCity(input);
     }
 
+    /** This method asks the voter for their province, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose province we are obtaining.
+     */
     public static void askForProvince(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -100,6 +139,11 @@ public class Main {
         voter.setVoterProvince(input);
     }
 
+    /** This method asks the voter for their postal code, validates it, then updates their voter information.
+     *
+     * @param sc A scanner used for receiving user input
+     * @param voter An instance of class VotePersonalIdentification. This is the person whose postal code we are obtaining.
+     */
     public static void askForPostalCode(Scanner sc, VotePersonalIdentification voter) {
         Boolean valid = false;
         String input;
@@ -113,12 +157,37 @@ public class Main {
         voter.setVoterPostalCode(input);
     }
 
-    public static void presidentBallot() {
+    /** This method allows a voter to vote for President.
+     *
+     * @param voter An instance of class VotePersonalIdentification. This is the person voting for President.
+     */
+    public static void presidentVote(VotePersonalIdentification voter) {
+        // Create the candidates for President
         Candidate[] presCans = new Candidate[3];
         presCans[0] = new Candidate("Bart Simpson", "If elected, I will make homework illegal.");
         presCans[1] = new Candidate("Harry Potter", "If you vote me for President, the next 4 years will be magical.");
         presCans[2] = new Candidate("Robin Hood", "If I'm President, I'll steal from the rich and give to the poor.");
-        BallotCreation presBallot = new BallotCreation("President", presCans);
+        // Create the ballot for the voter to vote
+        BallotCreation presBallot = new BallotCreation(voter, "President", presCans);
+        // Allow the voter to vote for President
+        presBallot.displayBallot();
+        System.out.println(presBallot.submitBallot());
+    }
+
+    /** This method allows a voter to vote for Vice President.
+     *
+     * @param voter An instance of class VotePersonalIdentification. This is the person voting for Vice President.
+     */
+    public static void vicePresidentVote(VotePersonalIdentification voter) {
+        // Create the candidates for Vice President
+        Candidate[] vicePresCans = new Candidate[4];
+        vicePresCans[0] = new Candidate("Buzz Lightyear", "If I'm Vice President, I'll make sure that the next few years are out of this world!");
+        vicePresCans[1] = new Candidate("Squidward Tentacles", "Your life is going to suck no matter who wins, so you may as well vote for me.");
+        vicePresCans[2] = new Candidate("Sheldon Cooper", "If you have any brains at all, you'll vote for me.");
+        vicePresCans[3] = new Candidate("Scooby Doo", "Rote for me!!! Will share my Rooby snacks!");
+        // Create the ballot for voters to vote for Vice President
+        BallotCreation presBallot = new BallotCreation(voter, "Vice President", vicePresCans);
+        // Allow the voter to vote for Vice President
         presBallot.displayBallot();
         System.out.println(presBallot.submitBallot());
     }
