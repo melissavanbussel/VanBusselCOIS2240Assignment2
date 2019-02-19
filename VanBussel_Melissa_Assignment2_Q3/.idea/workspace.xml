@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f330da6-fb4e-4a2d-832b-5a10f5fbbedf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/.idea/VanBussel_Melissa_Assignment2_Q1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/out/production/VanBussel_Melissa_Assignment2_Q1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VanBussel_Melissa_Assignment2_Q1/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BallotCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BallotCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VotePersonalIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VotePersonalIdentification.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +20,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="1656">
               <caret line="189" column="53" selection-start-line="189" selection-start-column="53" selection-end-line="189" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VotePersonalIdentification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3059">
-              <caret line="139" column="42" lean-forward="true" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+            <state relative-caret-position="-554">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,21 +45,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Candidate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding>
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BallotCreation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1748">
-              <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+            <state relative-caret-position="182">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -94,27 +94,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="VanBussel_Melissa_COIS2240_Assignment2_Q3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VanBussel_Melissa_Assignment2_Q3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VanBussel_Melissa_COIS2240_Assignment2_Q3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VanBussel_Melissa_Assignment2_Q3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550538191367" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550539828780" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -162,9 +147,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1600257" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16195373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -173,7 +157,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22733612" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7796374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -193,38 +177,34 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/VotePersonalIdentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="139" column="42" lean-forward="true" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="189" column="53" selection-start-line="189" selection-start-column="53" selection-end-line="189" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Candidate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BallotCreation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+        <state relative-caret-position="182">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="189" column="53" selection-start-line="189" selection-start-column="53" selection-end-line="189" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VotePersonalIdentification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-554">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

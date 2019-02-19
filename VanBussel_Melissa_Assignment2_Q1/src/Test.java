@@ -10,7 +10,6 @@ class Test {
         for (int i = 0; i < 5; i++) {
             printAreaAndPerimeter(gObjectArray[i]);
         }
-
     }
     private static void printAreaAndPerimeter(GeometricObject gObject) {
         System.out.println("The geometric object " + gObject
