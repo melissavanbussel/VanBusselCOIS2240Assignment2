@@ -134,7 +134,7 @@ public class Main {
             input = sc.nextLine();
             valid = voter.validateProvince(input);
             if (valid == false)
-                System.out.println("That is not a valid province. Province names must contain only letters.");
+                System.out.println("That is not a valid province. Province names must contain only letters and periods.");
         } while (valid == false);
         voter.setVoterProvince(input);
     }
